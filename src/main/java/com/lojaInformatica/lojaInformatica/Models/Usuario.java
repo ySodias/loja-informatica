@@ -1,5 +1,6 @@
 package com.lojaInformatica.lojaInformatica.Models;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 
 import javax.persistence.Table;
@@ -34,12 +35,14 @@ public class Usuario {
 	@Setter
 	@Email
 	@NotNull
+	@Column(unique = true)
 	private String email;	
 	
 	@Getter
 	@Setter
 	@NotNull
-	@Pattern(regexp = "(^\\d{2}.\\d{3}.\\d{3}/\\d{4}-\\d{2}$)")
+	@Column(unique = true)
+	@Pattern(regexp = "^((\\d{3}).(\\d{3}).(\\d{3})-(\\d{2}|X|x))*$")
 	private String cpf;
 	
 	@Getter

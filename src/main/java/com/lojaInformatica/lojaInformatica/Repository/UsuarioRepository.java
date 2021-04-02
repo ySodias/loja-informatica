@@ -1,7 +1,10 @@
 package com.lojaInformatica.lojaInformatica.Repository;
 
 import org.springframework.stereotype.Repository;
+
 import com.lojaInformatica.lojaInformatica.Models.Usuario;
+
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
