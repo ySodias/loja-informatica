@@ -48,4 +48,5 @@ public class UsuarioService {
 	{
 		return ResponseEntity.status(HttpStatus.CREATED).body(repositoryUsuario.save(usuario));
 	}
+	
 }
